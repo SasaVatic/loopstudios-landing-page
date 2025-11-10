@@ -1,0 +1,11 @@
+@use "../abstracts//breakpoints" as mq;
+
+.container {
+  max-width: 55.5rem;
+  padding-inline: 1.5625rem;
+  margin-inline: auto;
+
+  @include mq.media-breakpoint-up("desktop") {
+    padding-inline: 0;
+  }
+}

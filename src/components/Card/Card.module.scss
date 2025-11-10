@@ -1,0 +1,61 @@
+@use "../../styles/abstracts/variables" as var;
+@use "../../styles//abstracts/breakpoints" as mq;
+
+.card {
+  position: relative;
+  max-width: max-content;
+
+  & + & {
+    margin-top: 1.5625rem;
+
+    @include mq.media-breakpoint-up("tablet") {
+      margin-top: auto;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(var.$clr-black, 0.6),
+      transparent
+    );
+
+    @include mq.media-breakpoint-up("tablet") {
+      background: linear-gradient(
+        to top,
+        rgba(var.$clr-black, 0.6),
+        transparent
+      );
+    }
+  }
+
+  a {
+    position: absolute;
+    inset: 0;
+    font-size: 1.5rem;
+    font-family: var.$ff-josefin;
+    font-weight: var.$fw-light;
+    color: var.$clr-white;
+    text-transform: uppercase;
+
+    @include mq.media-breakpoint-up("tablet") {
+      font-size: 1.625rem;
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      max-width: 9.375rem;
+      padding: 0 0 1.125rem 1.25rem;
+
+      @include mq.media-breakpoint-up("tablet") {
+        padding: 0 0 1.5rem 2rem;
+        max-width: 170px;
+      }
+    }
+  }
+}

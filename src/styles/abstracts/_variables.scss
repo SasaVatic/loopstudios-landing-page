@@ -1,0 +1,28 @@
+// FONTS
+$ff-alata: "Alata", sans-serif;
+$ff-josefin: "Josefin Sans", sans-serif;
+$fs-base: 15px;
+$fw-light: 300;
+$fw-normal: 400;
+
+// COLORS
+$clr-white: hsl(0deg 0% 100%);
+$clr-black: hsl(0deg 0% 0%);
+$clr-grey: hsl(0deg 0% 70%);
+
+// SPACING
+$padding-container: 1.5625rem;
+
+// Z-INDEX
+$z-1: 10;
+$z-2: 20;
+$z-3: 30;
+$z-4: 40;
+$z-5: 50;
+
+// MEDIA QUERIES
+$breakpoints: (
+  mobile: 375px,
+  tablet: 768px,
+  desktop: 1440px,
+);

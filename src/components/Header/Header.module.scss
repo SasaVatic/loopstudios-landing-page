@@ -1,0 +1,120 @@
+@use "../../styles/abstracts/variables" as var;
+@use "../../styles/abstracts/breakpoints" as mq;
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2.5rem;
+  background-color: transparent;
+  z-index: var.$z-5;
+  transition: background-color 0.5s ease-in;
+
+  @include mq.media-breakpoint-up("tablet") {
+    padding-block: 3.125rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 0.625rem);
+    height: calc(100% - 2 * 2.5rem + 0.5rem);
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mq.media-breakpoint-up("tablet") {
+      width: calc(100% + 1.25rem);
+      height: calc(100% - 2 * 3.125rem + 0.5rem);
+    }
+  }
+
+  &.dark::before {
+    background-color: var.$clr-black;
+  }
+
+  &.light::before {
+    background-color: transparent;
+  }
+}
+
+.logo {
+  position: relative;
+
+  &Icon {
+    max-width: 9.0625rem;
+
+    @include mq.media-breakpoint-up("tablet") {
+      max-width: 9.6875rem;
+    }
+  }
+}
+
+.menuToggleBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: var.$z-5;
+
+  @include mq.media-breakpoint-up("tablet") {
+    display: none;
+  }
+
+  img {
+    opacity: 0;
+  }
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-inline: var.$padding-container;
+  background-color: var.$clr-black;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+
+  @include mq.media-breakpoint-up("tablet") {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    transform: translateX(0);
+    padding: 0;
+    gap: 1.6875rem;
+  }
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  li {
+    font-family: var.$ff-josefin;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    transform: translateY(8px);
+
+    @include mq.media-breakpoint-up("tablet") {
+      font-family: var.$ff-alata;
+      font-size: 0.75rem;
+      text-transform: capitalize;
+      transform: translateY(0);
+    }
+
+    a {
+      color: var.$clr-white;
+    }
+  }
+}

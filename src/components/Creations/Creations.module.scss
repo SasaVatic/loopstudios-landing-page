@@ -1,0 +1,60 @@
+@use "../../styles/abstracts/variables" as var;
+@use "../../styles//abstracts/breakpoints" as mq;
+
+.creations {
+  padding-block: 1.25rem 6.125rem;
+
+  @include mq.media-breakpoint-up("tablet") {
+    padding-block: 6rem 9.4375rem;
+  }
+}
+
+.titleBox {
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: var.$fw-light;
+    color: var.$clr-black;
+    text-transform: uppercase;
+
+    @include mq.media-breakpoint-up("tablet") {
+      font-size: 2.4375rem;
+    }
+  }
+
+  @include mq.media-breakpoint-up("tablet") {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.button {
+  &Mobile {
+    display: block;
+    margin-inline: auto;
+
+    @include mq.media-breakpoint-up("tablet") {
+      display: none;
+    }
+  }
+
+  &Tablet {
+    display: none;
+
+    @include mq.media-breakpoint-up("tablet") {
+      display: block;
+    }
+  }
+}
+
+.cardsContainer {
+  margin-block: 3.0625rem 1.875rem;
+
+  @include mq.media-breakpoint-up("tablet") {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5625rem;
+    margin-block: 64px 0;
+  }
+}

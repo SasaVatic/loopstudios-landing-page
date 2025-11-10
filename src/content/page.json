@@ -1,0 +1,263 @@
+{
+  "header": {
+    "menuToggle": {
+      "label": "Menu",
+      "iconOpenSrc": "src/assets/images/icon-hamburger.svg",
+      "iconCloseSrc": "src/assets/images/icon-close.svg"
+    },
+    "logo": {
+      "title": "loopstudios",
+      "src": "src/assets/images/logo.svg",
+      "alt": "Loopstudios logo"
+    },
+    "links": [
+      {
+        "label": "About",
+        "href": "#"
+      },
+      {
+        "label": "Careers",
+        "href": "#"
+      },
+      {
+        "label": "Events",
+        "href": "#"
+      },
+      {
+        "label": "Products",
+        "href": "#"
+      },
+      {
+        "label": "Support",
+        "href": "#"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Immersive experiences that deliver"
+  },
+  "about": {
+    "title": "The leader in interactive VR",
+    "text": "Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.",
+    "image": {
+      "mobile": {
+        "src": "src/assets/images/mobile/image-interactive.jpg",
+        "width": 654,
+        "height": 448
+      },
+      "desktop": {
+        "src": "src/assets/images/desktop/image-interactive.jpg",
+        "width": 731,
+        "height": 500
+      },
+      "alt": "Person using a VR headset"
+    }
+  },
+  "creations": {
+    "title": "Our creations",
+    "button": {
+      "label": "See all"
+    },
+    "cards": [
+      {
+        "href": "#",
+        "label": "Deep earth",
+        "image": {
+          "mobile": {
+            "src": "src/assets/images/mobile/image-deep-earth.jpg",
+            "width": 654,
+            "height": 240
+          },
+          "desktop": {
+            "src": "src/assets/images/desktop/image-deep-earth.jpg",
+            "width": 256,
+            "height": 450
+          },
+          "alt": "Earth picture in the space"
+        }
+      },
+      {
+        "href": "#",
+        "label": "Night arcade",
+        "image": {
+          "mobile": {
+            "src": "src/assets/images/mobile/image-night-arcade.jpg",
+            "width": 654,
+            "height": 240
+          },
+          "desktop": {
+            "src": "src/assets/images/desktop/image-night-arcade.jpg",
+            "width": 256,
+            "height": 450
+          },
+          "alt": "Arcade gaming machine"
+        }
+      },
+      {
+        "href": "#",
+        "label": "Soccer team VR",
+        "image": {
+          "mobile": {
+            "src": "src/assets/images/mobile/image-soccer-team.jpg",
+            "width": 654,
+            "height": 240
+          },
+          "desktop": {
+            "src": "src/assets/images/desktop/image-soccer-team.jpg",
+            "width": 256,
+            "height": 450
+          },
+          "alt": "Soccer team member in running"
+        }
+      },
+      {
+        "href": "#",
+        "label": "The grid",
+        "image": {
+          "mobile": {
+            "src": "src/assets/images/mobile/image-grid.jpg",
+            "width": 654,
+            "height": 240
+          },
+          "desktop": {
+            "src": "src/assets/images/desktop/image-grid.jpg",
+            "width": 256,
+            "height": 450
+          },
+          "alt": "Front right side relay car picture"
+        }
+      },
+      {
+        "href": "#",
+        "label": "From up above VR",
+        "image": {
+          "mobile": {
+            "src": "src/assets/images/mobile/image-from-above.jpg",
+            "width": 654,
+            "height": 240
+          },
+          "desktop": {
+            "src": "src/assets/images/desktop/image-from-above.jpg",
+            "width": 256,
+            "height": 450
+          },
+          "alt": "Birds eye view of mountain road"
+        }
+      },
+      {
+        "href": "#",
+        "label": "Pocket borealis",
+        "image": {
+          "mobile": {
+            "src": "src/assets/images/mobile/image-pocket-borealis.jpg",
+            "width": 654,
+            "height": 240
+          },
+          "desktop": {
+            "src": "src/assets/images/desktop/image-pocket-borealis.jpg",
+            "width": 256,
+            "height": 450
+          },
+          "alt": "Aurora borealis shining in the night sky"
+        }
+      },
+      {
+        "href": "#",
+        "label": "The curiosity",
+        "image": {
+          "mobile": {
+            "src": "src/assets/images/mobile/image-curiosity.jpg",
+            "width": 654,
+            "height": 240
+          },
+          "desktop": {
+            "src": "src/assets/images/desktop/image-curiosity.jpg",
+            "width": 256,
+            "height": 450
+          },
+          "alt": "Mars Curiosity rover"
+        }
+      },
+      {
+        "href": "#",
+        "label": "Make it fisheye",
+        "image": {
+          "mobile": {
+            "src": "src/assets/images/mobile/image-fisheye.jpg",
+            "width": 654,
+            "height": 240
+          },
+          "desktop": {
+            "src": "src/assets/images/desktop/image-fisheye.jpg",
+            "width": 256,
+            "height": 450
+          },
+          "alt": "Fisheye shot of a street during the day"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "src": "src/assets/images/logo.svg",
+      "alt": "Loopstudios logo"
+    },
+    "links": [
+      {
+        "label": "About",
+        "href": "#"
+      },
+      {
+        "label": "Careers",
+        "href": "#"
+      },
+      {
+        "label": "Events",
+        "href": "#"
+      },
+      {
+        "label": "Products",
+        "href": "#"
+      },
+      {
+        "label": "Support",
+        "href": "#"
+      }
+    ],
+    "socialLinks": [
+      {
+        "label": "Facebook",
+        "href": "#",
+        "icon": {
+          "src": "src/assets/images/icon-facebook.svg",
+          "alt": "Facebook logo"
+        }
+      },
+      {
+        "label": "Twitter",
+        "href": "#",
+        "icon": {
+          "src": "src/assets/images/icon-twitter.svg",
+          "alt": "Twitter logo"
+        }
+      },
+      {
+        "label": "Pinterest",
+        "href": "#",
+        "icon": {
+          "src": "src/assets/images/icon-pinterest.svg",
+          "alt": "Pinterest logo"
+        }
+      },
+      {
+        "label": "Instagram",
+        "href": "#",
+        "icon": {
+          "src": "src/assets/images/icon-instagram.svg",
+          "alt": "Instagram logo"
+        }
+      }
+    ],
+    "copyright": "Loopstudios. All rights reserved."
+  }
+}

@@ -1,0 +1,19 @@
+@use "../../styles/abstracts/variables" as var;
+@use "../../styles//abstracts/breakpoints" as mq;
+
+.button {
+  font-size: 0.8438rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var.$clr-black;
+  border: 1px solid var.$clr-black;
+  padding: 0.625rem 2.375rem;
+
+  @include mq.media-breakpoint-up("tablet") {
+    font-size: 0.6875rem;
+    letter-spacing: 4px;
+    border: 2px solid var.$clr-black;
+    padding: 0.5rem 1.75rem;
+    border-radius: 2px;
+  }
+}
