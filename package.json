@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "lint:styles": "stylelint \"**/*.scss\" --fix",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
