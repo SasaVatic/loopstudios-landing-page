@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import styles from "./Header.module.scss";
 import clsx from "clsx";
 import useHeaderThemeObserver from "@/hooks/useHeaderThemeObserver";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 interface HeaderProps {
   data: {
@@ -24,6 +26,8 @@ export default function Header({
 }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const theme = useHeaderThemeObserver();
+  const headerRef = useRef(null);
+  const logoRef = useRef(null);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -43,8 +47,24 @@ export default function Header({
     );
   };
 
+  useGSAP(() => {
+    gsap.timeline({ defaults: { duration: 0.5 } }).from('.nav-item', {
+      x: 500,
+      opacity: 0,
+      ease: "power1",
+      stagger: {
+        each: 0.3
+      }
+    }).from(logoRef.current, {
+      x: 500,
+      opacity: 0,
+      ease: "power1",
+    })
+  }, { scope: headerRef })
+
   return (
     <header
+      ref={headerRef}
       className={clsx(
         styles.header,
         theme === "dark" && styles.dark,
@@ -52,7 +72,7 @@ export default function Header({
         "container"
       )}
     >
-      <a className={styles.logo}>
+      <a ref={logoRef} href="#" className={styles.logo}>
         <img
           src={logo.src}
           alt={logo.alt}
@@ -79,7 +99,7 @@ export default function Header({
         </button>
         <ul className={clsx(styles.menu, isMenuOpen && styles.open)}>
           {links.map((link) => (
-            <li key={link.label}>
+            <li key={link.label} className="nav-item">
               <a href={link.href} onClick={() => setIsMenuOpen(false)}>
                 {link.label}
               </a>

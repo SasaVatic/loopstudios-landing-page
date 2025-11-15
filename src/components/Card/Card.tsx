@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import styles from "./Card.module.scss";
 
 interface CardProps {
@@ -20,7 +21,7 @@ interface CardProps {
 
 export default function Card({ href, label, image }: CardProps) {
   return (
-    <div className={styles.card}>
+    <div className={clsx(styles.card, "card")}>
       <a href={href}>
         <span>{label}</span>
       </a>

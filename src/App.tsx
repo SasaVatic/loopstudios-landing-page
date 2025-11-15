@@ -5,6 +5,11 @@ import Hero from "@/components/Hero/Hero";
 import About from "./components/About/About";
 import Creations from "./components/Creations/Creations";
 import Footer from "@/components/Footer/Footer";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 function App() {
   return (
