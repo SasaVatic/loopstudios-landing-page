@@ -9,26 +9,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 2.5rem;
+  padding-block-start: 2.5rem;
   background-color: transparent;
   z-index: var.$z-5;
 
   @include mq.media-breakpoint-up('tablet') {
-    padding-block: 3.25rem;
+    padding-block-start: 3.25rem;
   }
 
   &::before {
     content: '';
     position: absolute;
     width: calc(100% - 0.625rem);
-    height: calc(100% - 2 * 2.5rem + 0.5rem);
+    height: calc(100% - 2.5rem + 0.5rem);
     left: 50%;
     transform: translateX(-50%);
     transition: background-color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
     @include mq.media-breakpoint-up('tablet') {
       width: calc(100% + 1.25rem);
-      height: calc(100% - 2 * 3.125rem + 0.5rem);
+      height: calc(100% - 3.125rem + 0.5rem);
     }
   }
 

@@ -1,17 +1,17 @@
-@use "../../styles/abstracts/variables" as var;
-@use "../../styles/abstracts/breakpoints" as mq;
+@use '../../styles/abstracts/variables' as var;
+@use '../../styles/abstracts/breakpoints' as mq;
 
 .hero {
   display: flex;
   align-items: center;
-  background: url("../../assets/images/mobile/image-hero.jpg") no-repeat center
-    center / cover;
+  background: url('/assets/images/mobile/image-hero.jpg') no-repeat center center /
+    cover;
   height: 100vh;
   max-height: 46.25rem;
 
-  @include mq.media-breakpoint-up("tablet") {
-    background: url("../../assets/images/desktop/image-hero.jpg") no-repeat
-      center center / cover;
+  @include mq.media-breakpoint-up('tablet') {
+    background: url('/assets/images/desktop/image-hero.jpg') no-repeat center center /
+      cover;
     height: auto;
     max-height: none;
     padding-block: 11.25rem 7.1875rem;
@@ -30,7 +30,7 @@
     border: 2px solid var.$clr-white;
     max-width: 20.625rem;
 
-    @include mq.media-breakpoint-up("tablet") {
+    @include mq.media-breakpoint-up('tablet') {
       font-size: 3.5625rem;
       max-width: 32.5rem;
       padding: 2.0625rem 2rem 1.6875rem;

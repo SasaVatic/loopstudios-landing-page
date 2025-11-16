@@ -1,26 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-type HeaderTheme = "light" | "dark";
+type HeaderTheme = 'light' | 'dark';
 
-const useHeaderScrollTheme = (offset: number = 86): HeaderTheme => {
-  const [theme, setTheme] = useState<HeaderTheme>("light");
+const useHeaderScrollTheme = (offset: number = 88): HeaderTheme => {
+  const [theme, setTheme] = useState<HeaderTheme>('light');
 
   useEffect(() => {
     const sections = document.querySelectorAll<HTMLElement>(
-      "[data-header-theme]"
+      '[data-header-theme]'
     );
     if (!sections.length) return;
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      let currentTheme: HeaderTheme = "light";
+      let currentTheme: HeaderTheme = 'light';
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const sectionTheme = section.getAttribute(
-          "data-header-theme"
+          'data-header-theme'
         ) as HeaderTheme;
 
         if (
@@ -35,8 +35,8 @@ const useHeaderScrollTheme = (offset: number = 86): HeaderTheme => {
     };
 
     handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [offset]);
 
   return theme;

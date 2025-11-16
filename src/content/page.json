@@ -2,12 +2,12 @@
   "header": {
     "menuToggle": {
       "label": "Menu",
-      "iconOpenSrc": "src/assets/images/icon-hamburger.svg",
-      "iconCloseSrc": "src/assets/images/icon-close.svg"
+      "iconOpenSrc": "/loopstudios-landing-page/assets/images/icon-hamburger.svg",
+      "iconCloseSrc": "/loopstudios-landing-page/assets/images/icon-close.svg"
     },
     "logo": {
       "title": "loopstudios",
-      "src": "src/assets/images/logo.svg",
+      "src": "/loopstudios-landing-page/assets/images/logo.svg",
       "alt": "Loopstudios logo"
     },
     "links": [
@@ -41,12 +41,12 @@
     "text": "Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.",
     "image": {
       "mobile": {
-        "src": "src/assets/images/mobile/image-interactive.jpg",
+        "src": "/loopstudios-landing-page/assets/images/mobile/image-interactive.jpg",
         "width": 654,
         "height": 448
       },
       "desktop": {
-        "src": "src/assets/images/desktop/image-interactive.jpg",
+        "src": "/loopstudios-landing-page/assets/images/desktop/image-interactive.jpg",
         "width": 731,
         "height": 500
       },
@@ -64,12 +64,12 @@
         "label": "Deep earth",
         "image": {
           "mobile": {
-            "src": "src/assets/images/mobile/image-deep-earth.jpg",
+            "src": "/loopstudios-landing-page/assets/images/mobile/image-deep-earth.jpg",
             "width": 654,
             "height": 240
           },
           "desktop": {
-            "src": "src/assets/images/desktop/image-deep-earth.jpg",
+            "src": "/loopstudios-landing-page/assets/images/desktop/image-deep-earth.jpg",
             "width": 256,
             "height": 450
           },
@@ -81,12 +81,12 @@
         "label": "Night arcade",
         "image": {
           "mobile": {
-            "src": "src/assets/images/mobile/image-night-arcade.jpg",
+            "src": "/loopstudios-landing-page/assets/images/mobile/image-night-arcade.jpg",
             "width": 654,
             "height": 240
           },
           "desktop": {
-            "src": "src/assets/images/desktop/image-night-arcade.jpg",
+            "src": "/loopstudios-landing-page/assets/images/desktop/image-night-arcade.jpg",
             "width": 256,
             "height": 450
           },
@@ -98,12 +98,12 @@
         "label": "Soccer team VR",
         "image": {
           "mobile": {
-            "src": "src/assets/images/mobile/image-soccer-team.jpg",
+            "src": "/loopstudios-landing-page/assets/images/mobile/image-soccer-team.jpg",
             "width": 654,
             "height": 240
           },
           "desktop": {
-            "src": "src/assets/images/desktop/image-soccer-team.jpg",
+            "src": "/loopstudios-landing-page/assets/images/desktop/image-soccer-team.jpg",
             "width": 256,
             "height": 450
           },
@@ -115,12 +115,12 @@
         "label": "The grid",
         "image": {
           "mobile": {
-            "src": "src/assets/images/mobile/image-grid.jpg",
+            "src": "/loopstudios-landing-page/assets/images/mobile/image-grid.jpg",
             "width": 654,
             "height": 240
           },
           "desktop": {
-            "src": "src/assets/images/desktop/image-grid.jpg",
+            "src": "/loopstudios-landing-page/assets/images/desktop/image-grid.jpg",
             "width": 256,
             "height": 450
           },
@@ -132,12 +132,12 @@
         "label": "From up above VR",
         "image": {
           "mobile": {
-            "src": "src/assets/images/mobile/image-from-above.jpg",
+            "src": "/loopstudios-landing-page/assets/images/mobile/image-from-above.jpg",
             "width": 654,
             "height": 240
           },
           "desktop": {
-            "src": "src/assets/images/desktop/image-from-above.jpg",
+            "src": "/loopstudios-landing-page/assets/images/desktop/image-from-above.jpg",
             "width": 256,
             "height": 450
           },
@@ -149,12 +149,12 @@
         "label": "Pocket borealis",
         "image": {
           "mobile": {
-            "src": "src/assets/images/mobile/image-pocket-borealis.jpg",
+            "src": "/loopstudios-landing-page/assets/images/mobile/image-pocket-borealis.jpg",
             "width": 654,
             "height": 240
           },
           "desktop": {
-            "src": "src/assets/images/desktop/image-pocket-borealis.jpg",
+            "src": "/loopstudios-landing-page/assets/images/desktop/image-pocket-borealis.jpg",
             "width": 256,
             "height": 450
           },
@@ -166,12 +166,12 @@
         "label": "The curiosity",
         "image": {
           "mobile": {
-            "src": "src/assets/images/mobile/image-curiosity.jpg",
+            "src": "/loopstudios-landing-page/assets/images/mobile/image-curiosity.jpg",
             "width": 654,
             "height": 240
           },
           "desktop": {
-            "src": "src/assets/images/desktop/image-curiosity.jpg",
+            "src": "/loopstudios-landing-page/assets/images/desktop/image-curiosity.jpg",
             "width": 256,
             "height": 450
           },
@@ -183,12 +183,12 @@
         "label": "Make it fisheye",
         "image": {
           "mobile": {
-            "src": "src/assets/images/mobile/image-fisheye.jpg",
+            "src": "/loopstudios-landing-page/assets/images/mobile/image-fisheye.jpg",
             "width": 654,
             "height": 240
           },
           "desktop": {
-            "src": "src/assets/images/desktop/image-fisheye.jpg",
+            "src": "/loopstudios-landing-page/assets/images/desktop/image-fisheye.jpg",
             "width": 256,
             "height": 450
           },
@@ -199,7 +199,7 @@
   },
   "footer": {
     "logo": {
-      "src": "src/assets/images/logo.svg",
+      "src": "/loopstudios-landing-page/assets/images/logo.svg",
       "alt": "Loopstudios logo"
     },
     "links": [
@@ -229,7 +229,7 @@
         "label": "Facebook",
         "href": "#",
         "icon": {
-          "src": "src/assets/images/icon-facebook.svg",
+          "src": "/loopstudios-landing-page/assets/images/icon-facebook.svg",
           "alt": "Facebook logo"
         }
       },
@@ -237,7 +237,7 @@
         "label": "Twitter",
         "href": "#",
         "icon": {
-          "src": "src/assets/images/icon-twitter.svg",
+          "src": "/loopstudios-landing-page/assets/images/icon-twitter.svg",
           "alt": "Twitter logo"
         }
       },
@@ -245,7 +245,7 @@
         "label": "Pinterest",
         "href": "#",
         "icon": {
-          "src": "src/assets/images/icon-pinterest.svg",
+          "src": "/loopstudios-landing-page/assets/images/icon-pinterest.svg",
           "alt": "Pinterest logo"
         }
       },
@@ -253,7 +253,7 @@
         "label": "Instagram",
         "href": "#",
         "icon": {
-          "src": "src/assets/images/icon-instagram.svg",
+          "src": "/loopstudios-landing-page/assets/images/icon-instagram.svg",
           "alt": "Instagram logo"
         }
       }
