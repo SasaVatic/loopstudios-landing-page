@@ -88,6 +88,7 @@ export default function Header({
           className={styles.menuToggleBtn}
           aria-expanded={isMenuOpen}
           aria-controls="primary-navigation"
+          type="button"
           onClick={handleMenuToggle}
         >
           <img
