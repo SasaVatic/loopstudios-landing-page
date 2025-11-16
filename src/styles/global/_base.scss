@@ -1,5 +1,9 @@
 @use '../abstracts/variables' as var;
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var.$clr-white;
   overflow-x: hidden;
