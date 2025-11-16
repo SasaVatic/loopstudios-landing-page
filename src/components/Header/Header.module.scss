@@ -44,6 +44,7 @@
 .logo {
   position: relative;
   cursor: pointer;
+  z-index: var.$z-5;
 
   &Icon {
     max-width: 9.375rem;
